@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.5//EN"
+    "http://struts.apache.org/dtds/struts-2.5.dtd">
+
+
+<struts>
+
+	<constant name="struts.devMode" value="true" />
+	<package name="basicstruts2" extends="struts-default">
+
+
+	
+		
+	<!-- 	<action name="login" class="com.ztai.controller.LoginAction">
+			<result name="adminDashboard" type="redirect">adminview/adminDashboard.jsp</result>
+            <result name="candidateDashboard" type="redirect">studentview/candDashboard.jsp</result>
+			<result name="error">login.jsp</result>
+		</action> -->
+		<!-- 
+		
+		<action name="signup" class ="com.ztai.controller.SignupAction">
+			<result name="success">login.jsp</result>
+			<result name="error">signup.jsp</result>
+		</action>
+		
+		<action name="authorize" class="com.ztai.controller.Serve">
+            <result name="success" type="redirect">edit.jsp</result>
+            <result name="error">error.jsp</result>
+        </action>
+        
+          <action name="update" class="com.ztai.controller.Serve">
+            <result name="success" type="redirect">edit.jsp</result>
+            <result name="error">error.jsp</result>
+        </action>
+        
+        <action name="addTodo" class="com.ztai.controller.TodoAction" method="addTodo">
+            <result name="success">todo.jsp</result>
+            <result name="error">error.jsp</result>
+        </action>  
+        
+         <action name="deleteTodo" class="com.ztai.controller.TodoAction" method="deleteTodo">
+            <result name="success">todo.jsp</result>
+            <result name="error">error.jsp</result>
+        </action>
+        
+        
+         <action name="updateTodo" class="com.ztai.controller..TodoAction" method="updateTodo">
+	        <result name="success">todo.jsp</result>
+	        <result name="error">error.jsp</result>
+	    </action> 
+	    
+	    <action name="reportIssueAction" class="com.ztai.controller..ReportIssueAction">
+            <result name="success">candDashboard.jsp</result>
+            <result name="error">error.jsp</result>
+        </action>    
+        
+        <action name="deleteIssue" class="com.ztai.controller..ReportIssueAction" method="delete">
+		    <result name="success" type="redirect">
+       			 <param name="location">bugs.jsp?email=${email}&amp;ztaiid=${ZTAIID}</param>
+		    </result> 		    
+		    <result name="error">error.jsp</result>
+		</action>
+		 -->
+		
+<!-- 
+		<action name="logout" class="CheckLogout">
+			<result name="success" type="redirectAction">
+				<param name="actionName">loginPage</param>
+			</result>
+		</action>
+ -->
+		<!-- progresspage -->
+
+		<action name="progress"
+			class="com.ztai.controller.LoadProgressCardAction">
+			<result name="success">studentview/progresscards/progressCard.jsp</result>
+		</action>
+
+		<!-- from progress to other actions -->
+		<!-- coding -->
+		<action name="code"
+			class="com.ztai.controller.LoadCodingInfoAction">
+			<result name="success">studentview/progresscards/codingsection/CodingHomePage.jsp</result>
+		</action>
+
+		<action name="codeeditor"
+			class="com.ztai.controller.LoadCodingInfoAction"
+			method="storeIdInSession">
+			<result name="success">studentview/progresscards/codingsection/codeeditor/TerminalPage.jsp</result>
+		</action>
+
+		<action name="runCode"
+			class="com.ztai.controller.LoadCodingInfoAction"
+			method="runCode">
+			<result name="success">studentview/progresscards/codingsection/codeeditor/TerminalPage.jsp</result>
+		</action>
+
+		<action name="submitCode"
+			class="com.ztai.controller.LoadCodingInfoAction"
+			method="submitCode">
+			<result name="success">studentview/progresscards/codingsection/codeeditor/TerminalPage.jsp</result>
+		</action>
+		
+		<!-- mcq actions start -->
+
+		<action name="mcq"
+			class="com.ztai.controller.LoadMCQInfoAction">
+			<result name="success">studentview/progresscards/mcqsection/mcqHomePage.jsp</result>
+		</action>
+		
+		<action name="quiz"
+			class="com.ztai.controller.LoadQuizQuestionAction">
+			<result name="success">studentview/progresscards/mcqsection/quiz/quizPage.jsp</result>
+		</action>
+		
+		<action name="quizend"
+			class="com.ztai.controller.UpdateQuizScoreAction">
+			<result name="success">studentview/progresscards/mcqsection/mcqHomePage.jsp</result>
+		</action>
+		
+
+
+               
+		<action name="assignment"
+			class="com.ztai.controller.LoadAssignmentInfoAction">
+			<result name="success">studentview/progresscards/assignmentsection/assignmentSubmission.jsp</result>
+		</action>
+		
+		<action name="loadassignment"
+			class="com.ztai.controller.LoadAssignmentInfoAction"
+			method="loadSpecificAssignment" >
+			<result name="success">studentview/progresscards/assignmentsection/specificAssignment.jsp</result>
+		</action>
+		
+		<action name="submitassignment"
+			class="com.ztai.controller.LoadAssignmentInfoAction"
+			method="submitAssignment" >
+			<result name="success" type="redirect">assignment</result>
+		</action>
+
+
+
+
+
+
+
+	</package>
+
+</struts> 

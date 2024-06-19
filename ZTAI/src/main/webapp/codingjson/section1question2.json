@@ -1,0 +1,20 @@
+{
+  "questionName": "Even or Odd question 2 ",
+  "questionDescription": "No NO No No  checks if a given number is even or odd.",
+
+  "difficulty": "Easy",
+  "testCases": [
+    {
+      "input": "12",
+      "output": "Even"
+    },
+    {
+      "input": "93",
+      "output": "Odd"
+    },
+    {
+      "input": "6",
+      "output": "Even"
+    }
+  ]
+}

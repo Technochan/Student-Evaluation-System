@@ -1,0 +1,11 @@
+1. Simple File Download (Thread Interruption and Monitoring):
+
+	Create a thread to download a file from a URL.
+	Implement thread interruption to gracefully stop the download if needed (e.g., using a flag).
+	Monitor the download progress and provide feedback (e.g., percentage downloaded).
+
+2. Simple Producer-Consumer (Thread Communication):
+	Create two threads: a producer and a consumer.
+	The producer adds items to a shared buffer (e.g., an array).
+	The consumer removes items from the buffer and processes them.
+	Implement synchronization (e.g., wait-notify) to ensure the consumer doesn't access empty buffers and the producer doesn't overflow.

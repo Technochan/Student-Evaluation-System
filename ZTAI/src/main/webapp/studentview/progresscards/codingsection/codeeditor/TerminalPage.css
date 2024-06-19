@@ -1,0 +1,278 @@
+@charset "UTF-8";
+
+body{
+    margin:  0;
+    color: #ffffff;
+    background-color: black;
+}    
+
+.header{
+    width: 100%;
+    height: 80px;
+    background-color: rgb(4, 4, 49);
+}
+
+.question-top-info{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.question-top-info .question-info-left{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-left: 40px;
+}
+
+.question-top-info .question-info-right{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-right: 20px;
+}
+
+.question-top-info .question-info-right button{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+    padding:7px 20px;
+    font-size: 18px;
+    border-radius: 5px;
+    border: none;
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.question-top-info .question-info-right .difficulty-level, .marks-obtained, .solved, .not-solved{
+    width: 90px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    color: rgb(125, 201, 19);
+    font-weight: 700;
+    border: 1px solid rgb(95,144,28);
+    background-color: rgb(22,35,18);
+}
+
+.question-top-info .question-info-right .marks-obtained{
+    width: 220px;
+    color: rgb(183, 218, 28);
+    border: 1px solid rgb(136,171,42);
+    background-color: rgb(31,38,17);
+}
+
+
+.question-top-info .question-info-right .solved{
+    width: 180px;
+}
+
+.question-top-info .question-info-right .not-solved{
+    width: 200px !important;
+    color: rgb(218, 28, 28);
+    border: 1px solid rgb(171, 83, 42);
+    background-color: rgb(38, 17, 17);
+}
+
+.question-top-info .question-info-right #previous{
+    color: grey;
+    background-color: rgb(49, 49, 49);
+    border: 1px solid grey;
+}
+
+.question-top-info .question-info-right #next{
+    background-color: rgb(21,104,220);
+}
+
+
+/* Both question and console part start */
+.question-console{
+    width: 100%;
+    height: 750px;
+    display: flex;  
+}
+
+.question-console .question-statement-part , .console-part{
+    width: 50%;
+    overflow-y: auto;
+}
+
+.question-console .question-statement-part{
+    width: 50%;
+    padding: 30px;
+    margin-left: 20px;
+}
+
+.question-console .console-part{
+    border-left: 2px solid grey;
+}
+
+.question-console .question-statement-part .question-info p{
+   font-size: 20px;
+   line-height: 30px;
+}
+
+.question-console .question-statement-part .question-examples{
+   margin-bottom: 50px;
+   padding: 10px; 
+   background-color: rgb(36, 36, 36);
+}
+
+.question-console .question-statement-part .input-output {
+    padding-left: 20px;
+    border-left: 2px solid grey;
+}
+ 
+.question-console .question-statement-part .question-examples h3{
+    margin-bottom: 10px ;
+    margin-top: 10px;
+}
+
+/* Console right side part start */
+
+.question-console .console-part{
+    padding: 20px;
+}
+ 
+.question-console .console-part .language-part{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.question-console .console-part .language-part #theme {
+    width: 200px;
+    height: 30px;
+    color: #ffffff;
+    font-size: 15px;
+    padding-left: 10px;
+    background-color: rgb(0, 0, 0);
+}
+
+.question-console .console-part .language-part .language{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+ 
+ 
+.question-console .console-part .language-part #java{
+    padding:5px 30px;
+    text-align: center;
+    border-radius: 5px;
+    background-color: rgb(36, 36, 36);
+    border: 1px solid grey;
+}
+
+.question-console .console-part .console-box{
+   width: 100%;
+   height: auto;
+}
+
+.question-console .console-part .console-box .CodeMirror{
+    height: 550px;
+}
+  
+.question-console .console-part .console-box .CodeMirror-lines{
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+.question-console .console-part .submit-action{
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    gap: 30px;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+
+.question-console .console-part .submit-action button{
+    border: none;
+    background-color: black;
+}
+
+.question-console .console-part .submit-action .run-code, .submit-code{
+    width: 130px;
+    display: flex;
+    justify-content: center;
+    border-radius: 10px;
+    cursor: pointer;
+    border: 1px solid rgb(43, 76, 138);
+    background-color: rgb(21,104,220);
+    color: #ffffff;
+}
+
+.question-console .console-part .submit-action .run-code{
+    border: 1px solid rgb(99, 99, 99);
+    background-color: rgb(44, 44, 44);
+}
+
+.question-console .console-part .submit-action .run-code p, .submit-code p{
+    font-size: 17px;
+    font-weight: 500;
+}
+ 
+ 
+ 
+ /* 4 types of result */
+
+ /* 1. Complied Successfully */
+.question-console .console-part .complied-success{
+    width: 100%;
+    height: auto;
+}
+
+.question-console .console-part .complied-success .status-report{
+    width: 95%;
+    height: auto;
+    padding: 20px;
+    background-color:rgb(44, 44, 44);
+}
+
+.question-console .console-part .status-report .given-input, .your-output{
+    width: 95%;
+    height: auto;
+    padding: 5px;
+    background-color: rgb(59, 59, 59);
+}
+
+
+
+ /* 2. Compilation Error */
+.question-console .console-part .compilation-error{
+    width: 100%;
+    height: auto;
+}
+
+.question-console .console-part .compilation-error .error-report{
+    width: 95%;
+    height: auto;
+    padding: 20px;
+    background-color:rgb(36, 36, 36);
+}
+
+
+
+/* <!-- 3.Testcase error and success --> */
+.question-console .console-part .testcases{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.question-console .console-part .testcases .testcase{
+    display: flex;
+    gap: 20px;
+    padding-left: 20px;
+    background-color: rgb(36, 36, 36);
+}
+

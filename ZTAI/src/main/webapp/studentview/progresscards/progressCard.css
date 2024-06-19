@@ -1,0 +1,138 @@
+@charset "UTF-8";
+body{
+    margin: 0;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: black;
+    color: #ffffff;
+}
+
+.header{
+    width: 100%;
+    height: 80px;
+    background-color: rgb(12, 12, 71);
+}
+
+
+.assignment-page-assignment-cards{
+    width: 90%;
+    height: 500px;
+    display: flex;
+    gap: 30px;
+    margin-top: 40px;
+    flex-wrap: wrap;
+}
+
+.assignment-page-assignment-cards .assignment-page-assignment-card-info{
+    width: 28%;
+    height: 450px;
+    border-radius: 10px;
+    background-color: rgb(36, 36, 36);
+    padding: 30px;
+}
+
+.assignment-page-assignment-cards .assignment-card-module-info{
+    display: flex;
+    gap: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.assignment-page-assignment-cards .assignment-card-module-info .module-info,
+.questions-info , .markscored-info{
+    width: 30%;
+    height: 100px;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.assignment-page-assignment-cards .assignment-page-assignment-card-info .card-action{
+    width: 100%;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.assignment-page-assignment-cards .assignment-page-assignment-card-info .card-action .open-button, .progress-report{
+   width: 40%;
+   height: 120px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+.assignment-page-assignment-cards .assignment-page-assignment-card-info .card-action .open-button a{
+   width: 150px;
+   height: 60px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   gap: 20px;
+   text-decoration: none;
+   color: #ffffff;
+   border-radius: 10px;
+   border: 2px solid  rgb(99, 99, 99); 
+}
+
+.assignment-page-assignment-cards .assignment-page-assignment-card-info .card-action .open-button a:hover{
+    background-color: rgb(22, 22, 22);
+ }
+
+.assignment-page-assignment-cards .card-action .progress-report-round {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0 20px;
+    width: 150px;
+    height: 150px;
+    border-radius: 5px;
+}
+  
+.assignment-page-assignment-cards .card-action .progress-report-round .percent {
+    position: relative;
+}
+  
+.assignment-page-assignment-cards .card-action .progress-report-round svg {
+    position: relative;
+    width: 110px;
+    height: 110px;
+    transform: rotate(-90deg);
+}
+  
+.assignment-page-assignment-cards .card-action .progress-report-round svg circle {
+    width: 100%;
+    height: 100%;
+    fill: none;
+    stroke:  rgb(99, 99, 99);
+    stroke-width: 10;
+    stroke-linecap: round;
+}
+  
+.assignment-page-assignment-cards .card-action .progress-report-round svg circle:last-of-type {
+    stroke-dasharray: 310px;
+    stroke-dashoffset: calc(310px - (310px * var(--percent)) / 100);
+    stroke: #178ad6; 
+}
+  
+.assignment-page-assignment-cards .card-action .progress-report-round .number {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+  
+.assignment-page-assignment-cards .card-action .progress-report-round .number h3 {
+    font-weight: 800;
+    font-size: 1.5rem;
+}
+  
+
+
+
+
+

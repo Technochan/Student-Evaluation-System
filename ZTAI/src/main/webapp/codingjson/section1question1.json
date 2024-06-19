@@ -1,0 +1,20 @@
+{
+  "questionName": "Even or Odd",
+  "questionDescription": "Write a program that checks if a given number is even or odd.",
+
+  "difficulty": "Easy",
+  "testCases": [
+    {
+      "input": "2",
+      "output": "Even"
+    },
+    {
+      "input": "3",
+      "output": "Odd"
+    },
+    {
+      "input": "6",
+      "output": "Even"
+    }
+  ]
+}

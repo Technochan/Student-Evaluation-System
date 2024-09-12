@@ -1,1 +1,4 @@
-Need to update some parts
+Updated on - Sep 12 2024
+
+Need to update some parts.
+Because most of the code are hard coded. Need to update to support dynamic process.
